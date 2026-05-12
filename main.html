@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahra Yousif | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">Mahra<span>.Portfolio</span></div>
+    <ul class="nav-links">
+      <li><a href="main.html" class="active">Home</a></li>
+      <li><a href="term1.html">Term 1</a></li>
+      <li><a href="term2.html">Term 2</a></li>
+      <li><a href="term3.html">Term 3</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+    <div class="hero-content">
+      <!-- INTERACTIVE CYBER SCENE -->
+      <div class="cyber-scene" id="cyberScene">
+
+        <!-- Glowing orb with binary rain -->
+        <div class="cyber-orb">
+          <canvas id="binaryCanvas"></canvas>
+          <div class="orb-glow"></div>
+        </div>
+
+        <!-- Orbit rings -->
+        <div class="orb-ring orb-ring-1"></div>
+        <div class="orb-ring orb-ring-2"></div>
+        <div class="orb-ring orb-ring-3"></div>
+
+        <!-- Glassmorphism card with network web -->
+        <div class="cyber-card" id="cyberCard">
+          <div class="cyber-card-header">
+            <span class="cc-dot"></span>
+            <span class="cc-dot"></span>
+            <span class="cc-dot"></span>
+            <span class="cc-title">NETWORK SECURED</span>
+          </div>
+          <canvas id="webCanvas"></canvas>
+          <div class="cyber-card-footer">
+            <span class="cc-badge">&#128274; ENCRYPTED</span>
+            <span class="cc-badge">&#10003; PROTECTED</span>
+          </div>
+        </div>
+
+        <!-- Floating binary bits -->
+        <div class="float-bit fb1">1</div>
+        <div class="float-bit fb2">0</div>
+        <div class="float-bit fb3">1</div>
+        <div class="float-bit fb4">0</div>
+        <div class="float-bit fb5">1</div>
+
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Welcome to my</p>
+        <h1 class="hero-name">Mahra Yousif</h1>
+        <p class="hero-title">Cybersecurity Portfolio &nbsp;|&nbsp; Grade 12 &nbsp;|&nbsp; Business Specialization</p>
+        <p class="hero-tagline">Creating useful technology projects that help society.</p>
+        <div class="hero-cta">
+          <a href="term1.html" class="btn btn-primary">Explore Portfolio</a>
+          <a href="reflection.html" class="btn btn-outline">My Reflection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="card-icon">&#128100;</div>
+          <h3>Who I Am</h3>
+          <p>I am a creative and ambitious student who enjoys learning new skills and exploring technology. I like working on ICT projects, designing apps and websites, and solving problems in creative ways.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="card-icon">&#127891;</div>
+          <h3>Education</h3>
+          <p><strong>School:</strong> Taryam American Private School</p>
+          <p><strong>Grade:</strong> 12</p>
+          <p><strong>Specialization:</strong> Business</p>
+          <p><strong>Subject:</strong> Cybersecurity</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="card-icon">&#127919;</div>
+          <h3>My Goal</h3>
+          <p>To become successful in the future and create useful technology projects that help society. I am passionate about combining business knowledge with cybersecurity skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & INTERESTS -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; <span>Interests</span></h2>
+      <div class="skills-grid">
+
+        <div class="skills-block glass-card">
+          <h3><span class="icon">&#9889;</span> Skills</h3>
+          <div class="skill-tags">
+            <span class="tag tag-blue">Creativity</span>
+            <span class="tag tag-purple">Teamwork</span>
+            <span class="tag tag-cyan">Technology Skills</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>Creativity</span>
+              <div class="bar"><div class="bar-fill" style="--pct:90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Teamwork</span>
+              <div class="bar"><div class="bar-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Technology Skills</span>
+              <div class="bar"><div class="bar-fill" style="--pct:80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-block glass-card">
+          <h3><span class="icon">&#128161;</span> Interests</h3>
+          <div class="interest-list">
+            <div class="interest-item">
+              <div class="interest-icon">&#128274;</div>
+              <div>
+                <strong>Cybersecurity</strong>
+                <p>Protecting digital systems and learning about threats</p>
+              </div>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">&#128241;</div>
+              <div>
+                <strong>App Design</strong>
+                <p>Designing intuitive and creative mobile applications</p>
+              </div>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">&#128187;</div>
+              <div>
+                <strong>Website Development</strong>
+                <p>Building functional and beautiful websites</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-block glass-card">
+          <h3><span class="icon">&#127774;</span> Hobbies</h3>
+          <div class="hobby-grid">
+            <div class="hobby-card">
+              <div class="hobby-icon">&#127859;</div>
+              <p>Cooking</p>
+            </div>
+            <div class="hobby-card">
+              <div class="hobby-icon">&#127912;</div>
+              <p>Designing Projects</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO PREVIEW CARDS -->
+  <section class="section portfolio-section" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">My <span>Portfolio</span></h2>
+      <p class="section-sub">Explore my learning journey across three terms of Cybersecurity</p>
+      <div class="term-cards">
+
+        <a href="term1.html" class="term-card glass-card term1-card">
+          <div class="term-card-header">
+            <span class="term-num">01</span>
+            <span class="term-badge">Term 1</span>
+          </div>
+          <h3>Cybersecurity Awareness</h3>
+          <ul>
+            <li>Phishing &amp; Fake Emails</li>
+            <li>Triangle of Security</li>
+            <li>Digital Footprint</li>
+            <li>EV3 Robot Hacking</li>
+          </ul>
+          <span class="term-arrow">Explore &#8594;</span>
+        </a>
+
+        <a href="term2.html" class="term-card glass-card term2-card">
+          <div class="term-card-header">
+            <span class="term-num">02</span>
+            <span class="term-badge">Term 2</span>
+          </div>
+          <h3>Systems &amp; Security Foundations</h3>
+          <ul>
+            <li>Password Hashing (Python)</li>
+            <li>Dark Web Risks</li>
+            <li>Cybersecurity Laws</li>
+            <li>IoT Security</li>
+          </ul>
+          <span class="term-arrow">Explore &#8594;</span>
+        </a>
+
+        <a href="term3.html" class="term-card glass-card term3-card">
+          <div class="term-card-header">
+            <span class="term-num">03</span>
+            <span class="term-badge">Term 3</span>
+          </div>
+          <h3>AI &amp; Advanced Cybersecurity</h3>
+          <ul>
+            <li>AI Threat Detection</li>
+            <li>Online Fraud &amp; Scams</li>
+            <li>Detecting Fake Media</li>
+            <li>Website Risk Analysis</li>
+          </ul>
+          <span class="term-arrow">Explore &#8594;</span>
+        </a>
+
+        <a href="reflection.html" class="term-card glass-card reflection-card">
+          <div class="term-card-header">
+            <span class="term-num">&#9670;</span>
+            <span class="term-badge">Reflection</span>
+          </div>
+          <h3>My Learning Journey</h3>
+          <ul>
+            <li>What I Learned</li>
+            <li>Challenges Faced</li>
+            <li>Real-Life Connections</li>
+            <li>Future Goals</li>
+          </ul>
+          <span class="term-arrow">Read More &#8594;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">Mahra Yousif &mdash; Grade 12 Cybersecurity Portfolio</p>
+      <p class="footer-school">Taryam American Private School &nbsp;|&nbsp; Term 3 &nbsp;|&nbsp; 2025&ndash;2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

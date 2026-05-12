@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Term 1 – Cybersecurity Awareness | Mahra Yousif</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">Mahra<span>.Portfolio</span></div>
+    <ul class="nav-links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="term1.html" class="active">Term 1</a></li>
+      <li><a href="term2.html">Term 2</a></li>
+      <li><a href="term3.html">Term 3</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background: radial-gradient(ellipse at center, rgba(86,182,198,0.15) 0%, transparent 70%);">
+    <span class="page-badge">Term 1</span>
+    <h1>Cybersecurity Awareness</h1>
+    <p>Exploring the foundations of online safety, digital identity, and understanding cyber threats in everyday life.</p>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="glass-card" style="padding: 2rem; max-width: 750px; margin: 0 auto; text-align: center;">
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+          In Term 1, I learned the basics of cybersecurity — what it means to be safe online, how attacks like phishing work, what your digital footprint reveals about you, and how to protect networks and schools from cyber threats.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container">
+      <h2 class="section-title">Topics <span>Covered</span></h2>
+
+      <div class="topics-grid">
+
+        <!-- Topic 01: Cybersecurity Awareness -->
+        <div class="topic-card glass-card t1-accent">
+          <div class="topic-icon">&#128274;</div>
+          <div class="topic-num">Topic 01</div>
+          <h3>Cybersecurity Awareness</h3>
+          <p>Cybersecurity is the practice of protecting computers, networks, and data from unauthorized access or attacks. Being aware means knowing the types of threats that exist and how to avoid them.</p>
+          <div class="topic-highlight">
+            <strong>Key Threats:</strong> Malware, Ransomware, Social Engineering, Phishing, DDoS Attacks
+          </div>
+        </div>
+
+        <!-- Topic 02: Fake Emails & Phishing -->
+        <div class="topic-card glass-card t1-accent">
+          <div class="topic-icon">&#127907;</div>
+          <div class="topic-num">Topic 02</div>
+          <h3>Fake Emails &amp; Phishing Protection</h3>
+          <p>Phishing is when attackers send fake emails pretending to be a trusted source (bank, school, company) to trick you into giving personal information or clicking malicious links.</p>
+          <div class="topic-highlight">
+            <strong>How to Spot:</strong> Check sender email carefully, avoid suspicious links, look for spelling errors, never share passwords via email.
+          </div>
+          <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-blue">Spoofed Emails</span>
+            <span class="tag tag-purple">Fake Login Pages</span>
+            <span class="tag tag-cyan">Social Engineering</span>
+          </div>
+          <div class="topic-image">
+            <img src="fake%20email.png" alt="Example of a phishing / fake email" />
+          </div>
+        </div>
+
+        <!-- Topic 03: CIA Triad – Interactive Triangle -->
+        <div class="topic-card glass-card t1-accent">
+          <div class="topic-icon">&#9650;</div>
+          <div class="topic-num">Topic 03</div>
+          <h3>Information Security – Triangle of Security (CIA)</h3>
+          <p>The CIA Triad is the foundation of information security. Hover over each corner of the triangle to explore each principle in detail.</p>
+
+          <div class="cia-wrapper">
+            <!-- Triangle SVG outline -->
+            <svg class="cia-svg" viewBox="0 0 340 270" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:rgba(86,182,198,0.55)"/>
+                  <stop offset="100%" style="stop-color:rgba(138,203,208,0.25)"/>
+                </linearGradient>
+              </defs>
+              <polygon points="170,18 320,255 20,255" fill="rgba(86,182,198,0.04)" stroke="url(#triGrad)" stroke-width="2" stroke-dasharray="7,4"/>
+            </svg>
+
+            <!-- Top corner: Confidentiality -->
+            <div class="cia-item cia-top">
+              <div class="cia-icon-wrap">&#128274;</div>
+              <div class="cia-name">Confidentiality</div>
+              <div class="cia-expand">
+                <p>Only authorized users can access sensitive information.</p>
+                <strong>Methods: Encryption, Access Controls, MFA, Data Classification</strong>
+              </div>
+            </div>
+
+            <!-- Bottom-right: Integrity -->
+            <div class="cia-item cia-right">
+              <div class="cia-icon-wrap">&#9989;</div>
+              <div class="cia-name">Integrity</div>
+              <div class="cia-expand">
+                <p>Data must remain accurate and unaltered at all times.</p>
+                <strong>Methods: Checksums, Digital Signatures, Hashing, Audit Logs</strong>
+              </div>
+            </div>
+
+            <!-- Bottom-left: Availability -->
+            <div class="cia-item cia-left">
+              <div class="cia-icon-wrap">&#9889;</div>
+              <div class="cia-name">Availability</div>
+              <div class="cia-expand">
+                <p>Systems and data must be accessible when needed.</p>
+                <strong>Methods: Redundancy, Backups, Load Balancing, DDoS Protection</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic 04: Digital Footprint -->
+        <div class="topic-card glass-card t1-accent">
+          <div class="topic-icon">&#128420;</div>
+          <div class="topic-num">Topic 04</div>
+          <h3>Digital Footprint &amp; Online Behavior</h3>
+          <p>Your digital footprint is the trail of data you leave behind when using the internet — posts, searches, purchases, and even location data.</p>
+          <div class="topic-highlight">
+            <strong>Active Footprint:</strong> Things you choose to share (posts, emails, sign-ups)<br/>
+            <strong>Passive Footprint:</strong> Data collected without you knowing (cookies, tracking pixels)
+          </div>
+          <div style="margin-top: 1rem;">
+            <span class="tag tag-purple">Think Before You Post</span>
+            <span class="tag tag-cyan">Privacy Settings Matter</span>
+          </div>
+          <div class="topic-image">
+            <img src="footprint%20types.png" alt="Active vs passive digital footprint types" />
+          </div>
+        </div>
+
+        <!-- Topic 05: Excel Activity -->
+        <div class="topic-card glass-card t1-accent">
+          <div class="topic-icon">&#128202;</div>
+          <div class="topic-num">Topic 05</div>
+          <h3>Tracking Website Usage – Excel Activity</h3>
+          <p>We used a shared Excel sheet to log every website we visited during class, recording the URL, purpose, and whether it required login. This helped us analyze our own online habits and understand what data we share.</p>
+          <div class="topic-highlight">
+            <strong>What I Learned:</strong> Many sites track login data, cookies, and browsing habits without users realizing it. Being conscious of website usage is an important part of staying safe.
+          </div>
+          <div class="topic-image">
+            <img src="excel%20sheet.JPG" alt="Excel sheet used to track website usage in class" />
+          </div>
+        </div>
+
+        <!-- Topic 06: Cybersecurity in Networks -->
+        <div class="topic-card glass-card t1-accent">
+          <div class="topic-icon">&#127760;</div>
+          <div class="topic-num">Topic 06</div>
+          <h3>Cybersecurity in Networks</h3>
+          <p>Networks connect devices together, making communication possible — but they also create entry points for attackers. Securing a network involves multiple layers of protection.</p>
+          <div class="topic-highlight">
+            <strong>Key Defenses:</strong> Firewalls, Encryption (HTTPS/TLS), VPNs, Intrusion Detection Systems (IDS), Network Segmentation
+          </div>
+          <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-blue">Firewall</span>
+            <span class="tag tag-cyan">VPN</span>
+            <span class="tag tag-green">Encryption</span>
+          </div>
+          <div class="topic-image">
+            <img src="topology.png" alt="Network topology diagram showing cybersecurity layers" />
+          </div>
+        </div>
+
+        <!-- Topic 07: Cybersecurity in Schools -->
+        <div class="topic-card glass-card t1-accent">
+          <div class="topic-icon">&#127979;</div>
+          <div class="topic-num">Topic 07</div>
+          <h3>Cybersecurity in Schools</h3>
+          <p>Schools store sensitive data: student records, grades, personal details, and financial information. Protecting this data is critical. Schools must teach digital safety and enforce strong security policies.</p>
+          <div class="topic-highlight">
+            <strong>Best Practices for Schools:</strong> Strong password policies, content filtering, regular software updates, staff training, and student cybersecurity education
+          </div>
+          <div class="topic-image">
+            <img src="school.png" alt="Cybersecurity in schools — protecting student data" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY TAKEAWAY -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="glass-card" style="padding: 2.5rem; max-width: 750px; margin: 0 auto; border-top: 3px solid var(--primary);">
+        <h3 style="color: var(--primary-light); font-size: 1.2rem; margin-bottom: 1rem;">&#128161; Term 1 Key Takeaway</h3>
+        <p style="color: var(--text-muted); line-height: 1.8; font-size: 0.95rem;">
+          Cybersecurity starts with awareness. Before learning advanced tools or techniques, the most important step is understanding that threats exist everywhere online — in emails, websites, apps, and even physical devices. By knowing what to look for and developing safe digital habits, anyone can protect themselves and others in the digital world.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE NAV -->
+  <section style="padding: 2rem; text-align: center;">
+    <a href="main.html" class="btn btn-outline" style="margin-right: 1rem;">&#8592; Home</a>
+    <a href="term2.html" class="btn btn-primary">Term 2 &#8594;</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">Mahra Yousif &mdash; Grade 12 Cybersecurity Portfolio</p>
+      <p class="footer-school">Taryam American Private School &nbsp;|&nbsp; Term 1 &nbsp;|&nbsp; Cybersecurity Awareness</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Term 2 – Systems & Security Foundations | Mahra Yousif</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">Mahra<span>.Portfolio</span></div>
+    <ul class="nav-links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="term1.html">Term 1</a></li>
+      <li><a href="term2.html" class="active">Term 2</a></li>
+      <li><a href="term3.html">Term 3</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background: radial-gradient(ellipse at center, rgba(86,182,198,0.15) 0%, transparent 70%);">
+    <span class="page-badge" style="color: var(--cyan); border-color: rgba(86,182,198,0.35);">Term 2</span>
+    <h1 style="background: linear-gradient(135deg, #EFE3CA 30%, var(--cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Systems &amp; Security Foundations</h1>
+    <p>Diving deeper into how computer systems work, how passwords are protected, and how laws keep us safe in the digital world.</p>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="glass-card" style="padding: 2rem; max-width: 750px; margin: 0 auto; text-align: center; border-top: 3px solid var(--cyan);">
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+          In Term 2, I explored the technical side of cybersecurity — how systems are layered for protection, how Python is used to secure passwords through hashing, and the real dangers of the dark web. I also studied cybersecurity laws in the UAE and the growing risks of connected IoT devices.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container">
+      <h2 class="section-title">Topics <span style="color: var(--cyan);">Covered</span></h2>
+
+      <div class="topics-grid">
+
+        <!-- Topic 01: System Layers -->
+        <div class="topic-card glass-card t2-accent">
+          <div class="topic-icon">&#127959;</div>
+          <div class="topic-num">Topic 01</div>
+          <h3>System Layers – How Computers Are Structured &amp; Protected</h3>
+          <p>Computer systems are organized in layers, each requiring its own security measures. Understanding the layers helps us identify where attacks can happen.</p>
+          <div class="layers-stack" style="margin-top: 1rem;">
+            <div class="layer layer-1"><span class="layer-icon">&#128100;</span><span class="layer-label">User Layer<span class="layer-desc"> — Passwords, 2FA, User Permissions</span></span></div>
+            <div class="layer layer-2"><span class="layer-icon">&#128187;</span><span class="layer-label">Application Layer<span class="layer-desc"> — Secure Software, Input Validation</span></span></div>
+            <div class="layer layer-3"><span class="layer-icon">&#128260;</span><span class="layer-label">OS Layer<span class="layer-desc"> — System Updates, Access Control</span></span></div>
+            <div class="layer layer-4"><span class="layer-icon">&#127760;</span><span class="layer-label">Network Layer<span class="layer-desc"> — Firewalls, Encryption, VPNs</span></span></div>
+            <div class="layer layer-5"><span class="layer-icon">&#128421;</span><span class="layer-label">Hardware Layer<span class="layer-desc"> — Physical Security, Secure Boot</span></span></div>
+          </div>
+        </div>
+
+        <!-- Topic 02: Password Hashing -->
+        <div class="topic-card glass-card t2-accent">
+          <div class="topic-icon">&#128272;</div>
+          <div class="topic-num">Topic 02</div>
+          <h3>Password Hashing Using Python</h3>
+          <p>Storing passwords in plain text is dangerous. Hashing converts a password into a fixed-length string that cannot be reversed. We used Python's <code style="color: var(--cyan);">hashlib</code> library to demonstrate this.</p>
+
+          <div class="code-block"><span class="cm"># Password Hashing with Python - hashlib</span>
+<span class="kw">import</span> hashlib
+
+<span class="cm"># The user's password</span>
+password = <span class="str">"SecurePass123"</span>
+
+<span class="cm"># Encode and hash using SHA-256</span>
+hashed = hashlib.<span class="fn">sha256</span>(password.<span class="fn">encode</span>()).<span class="fn">hexdigest</span>()
+
+<span class="fn">print</span>(<span class="str">"Original: "</span>, password)
+<span class="fn">print</span>(<span class="str">"Hashed:  "</span>, hashed)
+
+<span class="cm"># Output:</span>
+<span class="cm"># Hashed: a665a45920422f9d417e4867efdc4fb8...</span></div>
+
+          <div class="topic-highlight" style="border-left-color: var(--cyan);">
+            <strong style="color: var(--cyan);">Key Concept:</strong> Even if attackers steal the database, they only see hashed values — not real passwords. Salting adds extra randomness to prevent rainbow table attacks.
+          </div>
+        </div>
+
+        <!-- Topic 03: Dark Web – Interactive Iceberg -->
+        <div class="topic-card glass-card t2-accent">
+          <div class="topic-icon">&#127761;</div>
+          <div class="topic-num">Topic 03</div>
+          <h3>Dark Web &amp; Cybersecurity Risks</h3>
+          <p>The internet has three layers. Hover over each layer of the iceberg below to explore what it contains and the risks it carries.</p>
+          <div class="topic-highlight" style="border-left-color: var(--cyan);">
+            <strong style="color: var(--cyan);">Risks of the Dark Web:</strong> Stolen credentials for sale, illegal marketplaces, malware downloads, and cybercriminal networks.
+          </div>
+
+          <!-- Interactive Iceberg -->
+          <div class="iceberg-wrapper">
+
+            <div class="iceberg-layer ice-surface">
+              <div class="ice-header">
+                <span class="ice-icon">&#127760;</span>
+                <span class="ice-name">Surface Web</span>
+                <span class="ice-pct">~4% of internet</span>
+              </div>
+              <div class="ice-detail">Indexed by search engines (Google, Bing). Includes public websites, social media, news, and videos. Accessible to everyone.</div>
+            </div>
+
+            <div class="iceberg-divider">&#8776; W A T E R L I N E &#8776;</div>
+
+            <div class="iceberg-layer ice-deep">
+              <div class="ice-header">
+                <span class="ice-icon">&#128274;</span>
+                <span class="ice-name">Deep Web</span>
+                <span class="ice-pct">~90% of internet</span>
+              </div>
+              <div class="ice-detail">Not indexed by search engines. Includes online banking portals, medical records, email inboxes, and private databases. Requires login credentials to access.</div>
+            </div>
+
+            <div class="iceberg-layer ice-dark">
+              <div class="ice-header">
+                <span class="ice-icon">&#127762;</span>
+                <span class="ice-name">Dark Web</span>
+                <span class="ice-pct">~6% of internet</span>
+              </div>
+              <div class="ice-detail">Requires special software (Tor browser) to access. Contains illegal markets, stolen data, weapons, and criminal networks. Highly dangerous.</div>
+            </div>
+
+          </div>
+
+          <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-cyan">Tor Browser</span>
+            <span class="tag tag-purple">Anonymous Networks</span>
+            <span class="tag tag-blue">Data Breaches</span>
+          </div>
+        </div>
+
+        <!-- Topic 04: Cybersecurity Laws -->
+        <div class="topic-card glass-card t2-accent">
+          <div class="topic-icon">&#9878;</div>
+          <div class="topic-num">Topic 04</div>
+          <h3>Cybersecurity Laws &amp; Digital Safety Rules</h3>
+          <p>The UAE has strict laws to protect people online. The <strong style="color: var(--cyan);">UAE Cybercrime Law (Federal Decree-Law No. 34 of 2021)</strong> criminalizes hacking, identity theft, spreading fake news, and unauthorized data access.</p>
+          <div class="topic-highlight" style="border-left-color: var(--cyan);">
+            <strong style="color: var(--cyan);">Penalties include:</strong> Fines up to AED 3,000,000 and imprisonment for serious cybercrimes including unauthorized access and data theft.
+          </div>
+          <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-green">UAE Cybercrime Law</span>
+            <span class="tag tag-cyan">GDPR Awareness</span>
+            <span class="tag tag-blue">Digital Rights</span>
+          </div>
+        </div>
+
+        <!-- Topic 05: IoT -->
+        <div class="topic-card glass-card t2-accent">
+          <div class="topic-icon">&#128268;</div>
+          <div class="topic-num">Topic 05</div>
+          <h3>Internet of Things (IoT) &amp; Cybersecurity Risks</h3>
+          <p>IoT refers to everyday devices connected to the internet — smart TVs, refrigerators, cameras, thermostats, and more. Each connected device is a potential entry point for attackers.</p>
+          <div class="topic-highlight" style="border-left-color: var(--cyan);">
+            <strong style="color: var(--cyan);">Main Risks:</strong> Default passwords left unchanged, outdated firmware, no encryption, and devices that cannot be easily updated or patched.
+          </div>
+          <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-cyan">Smart Home Risks</span>
+            <span class="tag tag-purple">Botnet Attacks</span>
+            <span class="tag tag-green">Firmware Updates</span>
+          </div>
+          <div class="topic-video">
+            <video controls>
+              <source src="smart%20home.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY TAKEAWAY -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="glass-card" style="padding: 2.5rem; max-width: 750px; margin: 0 auto; border-top: 3px solid var(--cyan);">
+        <h3 style="color: var(--cyan); font-size: 1.2rem; margin-bottom: 1rem;">&#128161; Term 2 Key Takeaway</h3>
+        <p style="color: var(--text-muted); line-height: 1.8; font-size: 0.95rem;">
+          Security is not just one thing — it is many layers working together. From hashing passwords in Python to understanding the dark web and UAE laws, I learned that both technical skills and legal knowledge are needed to stay safe and responsible in the digital world. The growth of IoT also shows that cybersecurity must evolve with the technology we use every day.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE NAV -->
+  <section style="padding: 2rem; text-align: center;">
+    <a href="term1.html" class="btn btn-outline" style="margin-right: 1rem;">&#8592; Term 1</a>
+    <a href="term3.html" class="btn btn-primary">Term 3 &#8594;</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">Mahra Yousif &mdash; Grade 12 Cybersecurity Portfolio</p>
+      <p class="footer-school">Taryam American Private School &nbsp;|&nbsp; Term 2 &nbsp;|&nbsp; Systems &amp; Security Foundations</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

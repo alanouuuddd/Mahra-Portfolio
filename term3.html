@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Term 3 – AI & Advanced Cybersecurity | Mahra Yousif</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">Mahra<span>.Portfolio</span></div>
+    <ul class="nav-links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="term1.html">Term 1</a></li>
+      <li><a href="term2.html">Term 2</a></li>
+      <li><a href="term3.html" class="active">Term 3</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background: radial-gradient(ellipse at center, rgba(86,182,198,0.15) 0%, transparent 70%);">
+    <span class="page-badge" style="color: var(--primary); border-color: rgba(86,182,198,0.35);">Term 3</span>
+    <h1 style="background: linear-gradient(135deg, #EFE3CA 30%, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">AI &amp; Advanced Cybersecurity</h1>
+    <p>Exploring how Artificial Intelligence is reshaping cybersecurity — from threat detection to fake media, online fraud, and website risk analysis.</p>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="glass-card" style="padding: 2rem; max-width: 750px; margin: 0 auto; text-align: center; border-top: 3px solid var(--primary);">
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+          In Term 3, I explored the cutting edge of cybersecurity — how AI is used both by defenders (to detect threats) and attackers (to create deepfakes and carry out fraud). I also studied how internet tools analyze websites for safety and played cybersecurity simulation games to reinforce my skills.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container">
+      <h2 class="section-title">Topics <span style="color: var(--primary);">Covered</span></h2>
+
+      <div class="topics-grid">
+
+        <!-- Topic 01: AI Threat Detection -->
+        <div class="topic-card glass-card t3-accent">
+          <div class="topic-icon">&#129302;</div>
+          <div class="topic-num">Topic 01</div>
+          <h3>AI-Powered Threat Detection Systems</h3>
+          <p>AI can analyze millions of events per second to identify patterns that indicate a cyberattack — something impossible for humans to do manually. Machine learning models are trained on past attacks to recognize and block new threats in real time.</p>
+          <div class="topic-highlight" style="border-left-color: var(--primary);">
+            <strong style="color: var(--primary);">How it works:</strong> AI analyzes login times, locations, typing speed, and network traffic. If something unusual is detected, it alerts security teams or automatically blocks the action.
+          </div>
+          <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-purple">Machine Learning</span>
+            <span class="tag tag-cyan">Behavioral Analysis</span>
+            <span class="tag tag-blue">SIEM Systems</span>
+          </div>
+          <div class="topic-image">
+            <img src="siem.png" alt="SIEM dashboard showing AI threat detection" />
+          </div>
+        </div>
+
+        <!-- Topic 02: Money Threats -->
+        <div class="topic-card glass-card t3-accent">
+          <div class="topic-icon">&#128176;</div>
+          <div class="topic-num">Topic 02</div>
+          <h3>Money Threats, Scams &amp; Online Fraud</h3>
+          <p>Online financial fraud is one of the fastest-growing forms of cybercrime. Attackers use increasingly sophisticated methods to steal money and financial data from individuals and businesses.</p>
+          <div class="topic-highlight" style="border-left-color: var(--primary);">
+            <strong style="color: var(--primary);">Common Types:</strong>
+          </div>
+          <ul style="margin-top: 0.5rem; padding-left: 1rem;">
+            <li style="list-style: disc; color: var(--text-muted); font-size: 0.88rem; margin-bottom: 0.3rem;"><strong style="color: var(--text);">Phishing</strong> — fake emails/sites stealing banking credentials</li>
+            <li style="list-style: disc; color: var(--text-muted); font-size: 0.88rem; margin-bottom: 0.3rem;"><strong style="color: var(--text);">Vishing</strong> — phone call scams pretending to be banks</li>
+            <li style="list-style: disc; color: var(--text-muted); font-size: 0.88rem; margin-bottom: 0.3rem;"><strong style="color: var(--text);">Smishing</strong> — SMS-based fraud with fake links</li>
+            <li style="list-style: disc; color: var(--text-muted); font-size: 0.88rem;"><strong style="color: var(--text);">Cryptocurrency Scams</strong> — fake investment platforms</li>
+          </ul>
+          <div class="topic-image">
+            <img src="money%20threat.png" alt="Examples of online money threats and financial scams" />
+          </div>
+        </div>
+
+        <!-- Topic 03: Detecting Fake Media -->
+        <div class="topic-card glass-card t3-accent">
+          <div class="topic-icon">&#127902;</div>
+          <div class="topic-num">Topic 03</div>
+          <h3>Detecting Fake Media – Images, Videos &amp; Audio</h3>
+          <p>AI can now generate incredibly realistic fake images, videos (deepfakes), and audio. This poses major risks to trust, security, and democracy. Fortunately, other AI tools are being developed to detect this fake content.</p>
+          <div class="topic-highlight" style="border-left-color: var(--primary);">
+            <strong style="color: var(--primary);">How to Spot Fakes:</strong> Look for unnatural eye blinking, blurry edges around hair, inconsistent lighting, distorted audio sync, and unnatural facial expressions in videos.
+          </div>
+          <div class="diagram-box" style="margin-top: 1rem; padding: 1.25rem;">
+            <h4 style="margin-bottom: 1rem; font-size: 0.95rem;">Detection Methods</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div style="background: rgba(86,182,198,0.09); border: 1px solid rgba(86,182,198,0.28); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.3rem;">&#128064;</div>
+                <strong style="font-size: 0.82rem; color: var(--cyan);">Visual Artifacts</strong>
+                <p style="font-size: 0.76rem; color: var(--text-muted); margin-top: 0.2rem;">Pixel inconsistencies &amp; blur edges</p>
+              </div>
+              <div style="background: rgba(86,182,198,0.09); border: 1px solid rgba(86,182,198,0.28); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.3rem;">&#127908;</div>
+                <strong style="font-size: 0.82rem; color: var(--cyan);">Audio Analysis</strong>
+                <p style="font-size: 0.76rem; color: var(--text-muted); margin-top: 0.2rem;">Unnatural tone &amp; frequency patterns</p>
+              </div>
+              <div style="background: rgba(86,182,198,0.09); border: 1px solid rgba(86,182,198,0.28); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.3rem;">&#129504;</div>
+                <strong style="font-size: 0.82rem; color: var(--cyan);">AI Detection Tools</strong>
+                <p style="font-size: 0.76rem; color: var(--text-muted); margin-top: 0.2rem;">Deepware, Microsoft Video Authenticator</p>
+              </div>
+              <div style="background: rgba(86,182,198,0.09); border: 1px solid rgba(86,182,198,0.28); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.3rem;">&#128269;</div>
+                <strong style="font-size: 0.82rem; color: var(--cyan);">Reverse Search</strong>
+                <p style="font-size: 0.76rem; color: var(--text-muted); margin-top: 0.2rem;">Trace image origin using Google Images</p>
+              </div>
+            </div>
+          </div>
+          <div class="topic-image">
+            <img src="deepfake.jpg" alt="Deepfake detection example" />
+          </div>
+        </div>
+
+        <!-- Topic 04: AI Cybersecurity Games -->
+        <div class="topic-card glass-card t3-accent">
+          <div class="topic-icon">&#127918;</div>
+          <div class="topic-num">Topic 04</div>
+          <h3>AI &amp; Cybersecurity Games – Learning Through Simulation</h3>
+          <p>Cybersecurity games and simulations are interactive ways to practice real-world skills in a safe environment. From CTF challenges to AI-powered simulators, these tools helped me apply what I learned.</p>
+          <div class="topic-highlight" style="border-left-color: var(--primary);">
+            <strong style="color: var(--primary);">Simulations I Used:</strong> Online phishing simulators, network attack/defense games, and AI-powered cyber range tools that simulate real attack scenarios.
+          </div>
+          <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-purple">CTF Challenges</span>
+            <span class="tag tag-cyan">Cyber Range</span>
+            <span class="tag tag-blue">Gamified Learning</span>
+          </div>
+          <div class="topic-video">
+            <video controls>
+              <source src="game.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+        </div>
+
+        <!-- Topic 05: Website Risk Analysis -->
+        <div class="topic-card glass-card t3-accent">
+          <div class="topic-icon">&#127760;</div>
+          <div class="topic-num">Topic 05</div>
+          <h3>How the Internet Analyzes Websites &amp; Detects Risks</h3>
+          <p>There are tools and systems that automatically scan websites for security vulnerabilities, malicious code, and suspicious behavior. This protects users before they even visit a site.</p>
+          <div class="topic-highlight" style="border-left-color: var(--primary);">
+            <strong style="color: var(--primary);">Tools Used:</strong> Google Safe Browsing, VirusTotal, SSL certificate checkers, WHOIS lookup, and browser security warnings.
+          </div>
+          <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-green">SSL / HTTPS</span>
+            <span class="tag tag-cyan">VirusTotal</span>
+            <span class="tag tag-purple">Safe Browsing API</span>
+          </div>
+          <div class="topic-image">
+            <img src="ssl.png" alt="SSL certificate checker and website security analysis" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REAL-LIFE CONNECTIONS -->
+  <section class="section" style="background: var(--bg2);">
+    <div class="container">
+      <h2 class="section-title">Real-Life <span style="color: var(--primary);">Connections</span></h2>
+      <p class="section-sub">How cybersecurity protects the systems we depend on every day</p>
+      <div class="reallife-grid">
+        <div class="reallife-card">
+          <div class="rl-icon">&#127968;</div>
+          <h4>Banks &amp; Online Payments</h4>
+          <p>Banks use multi-factor authentication, AI fraud detection, and end-to-end encryption to protect financial transactions and customer accounts.</p>
+        </div>
+        <div class="reallife-card">
+          <div class="rl-icon">&#127979;</div>
+          <h4>Schools &amp; Education</h4>
+          <p>Schools protect student records with secure login portals, content filters, and staff training to prevent data breaches and unauthorized access.</p>
+        </div>
+        <div class="reallife-card">
+          <div class="rl-icon">&#127981;</div>
+          <h4>UAE Government Systems</h4>
+          <p>The UAE uses advanced cybersecurity infrastructure including the UAE-CERT agency, strict cybercrime laws, and national ID authentication for e-government services.</p>
+        </div>
+        <div class="reallife-card">
+          <div class="rl-icon">&#128241;</div>
+          <h4>Social Media Protection</h4>
+          <p>Platforms use AI to detect fake accounts, hate speech, phishing links, and impersonation — protecting billions of users from harm.</p>
+        </div>
+        <div class="reallife-card">
+          <div class="rl-icon">&#128268;</div>
+          <h4>Smart Devices &amp; IoT</h4>
+          <p>Smart home devices, wearables, and industrial sensors require regular updates, strong default passwords, and network isolation to stay secure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY TAKEAWAY -->
+  <section class="section" style="padding-top: 3rem;">
+    <div class="container">
+      <div class="glass-card" style="padding: 2.5rem; max-width: 750px; margin: 0 auto; border-top: 3px solid var(--primary);">
+        <h3 style="color: var(--primary); font-size: 1.2rem; margin-bottom: 1rem;">&#128161; Term 3 Key Takeaway</h3>
+        <p style="color: var(--text-muted); line-height: 1.8; font-size: 0.95rem;">
+          AI is both a powerful defense tool and a dangerous weapon in the wrong hands. Understanding how AI is used to detect threats, generate fake media, and analyze risks gives us the knowledge to stay ahead. Cybersecurity is no longer just a technical field — it is essential for every person, every business, and every government in the modern world.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE NAV -->
+  <section style="padding: 2rem; text-align: center;">
+    <a href="term2.html" class="btn btn-outline" style="margin-right: 1rem;">&#8592; Term 2</a>
+    <a href="reflection.html" class="btn btn-primary">Reflection &#8594;</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">Mahra Yousif &mdash; Grade 12 Cybersecurity Portfolio</p>
+      <p class="footer-school">Taryam American Private School &nbsp;|&nbsp; Term 3 &nbsp;|&nbsp; AI &amp; Advanced Cybersecurity</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
